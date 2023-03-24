@@ -1,0 +1,66 @@
+root {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.pagina {
+    padding: 1vh;
+}
+
+.lista-pokemon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-pokemon_itens {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    color: white;
+    display: grid;
+    grid-template:
+        "a a a a a"
+        "b b b b b"
+        "c c c d d"
+        "e e e d d";
+}
+
+.numero-pokemon {
+    grid-area: a;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1px;
+}
+
+.nome-pokemon {
+    grid-area: b;
+    margin: 1px;
+}
+
+.move-set1-pokemon {
+    grid-area: c;
+}
+.move-set2-pokemon {
+    grid-area: e;
+}
+
+.imagem-pokemon {
+    max-width: 100%;
+    grid-area: d;
+    align-self: center;
+    display: flex;
+    justify-content: end;
+    heigth: 70px;
+}
+
+.move-set1-pokemon,
+.move-set2-pokemon {
+    background-color: #122295;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
