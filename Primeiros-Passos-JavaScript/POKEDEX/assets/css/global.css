@@ -24,12 +24,13 @@
     background-color: rgb(37, 228, 221);
     color: white;
     display: grid;
-    grid-template-columns: 0.6fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "a a "
         "b b "
-        "c d "
-        "e d ";
+        "d d "
+        "d d "
+        "c e "
+        "a a "
 }
 
 .numero-pokemon {
@@ -38,13 +39,34 @@
     justify-content: flex-end;
     margin: 1px;
     color: rgb(70, 71, 73);
-    font-size: 2vh;
+    font-size: 4vh;
 }
 
 .nome-pokemon {
     grid-area: b;
+    display: flex;
     margin: 1px;
-    font-size: 3vh;
+    font-size: 4vh;
+    font-weight: 700;
+    justify-content: center;
+
+}
+
+.move-set1-pokemon,
+.move-set2-pokemon {
+    background-color: #07cddb;
+    border-radius: 10px;
+    padding: 10%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 90%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .move-set1-pokemon {
@@ -57,30 +79,17 @@
 
 .imagem-pokemon {
     max-width: 100%;
+    max-height: 200px;
     height: 100%;
     grid-area: d;
     align-items: center;
     display: flex;
+    justify-content: center;
     padding: 10px;
     box-sizing: border-box;
     margin: auto;
 }
 
-.move-set1-pokemon,
-.move-set2-pokemon {
-    background-color: #07cddb;
-    border-radius: 10px;
-    padding: 10%;
-    margin: auto 0;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 2vh;
-}
 
 @media screen and (min-width: 768px) {
     .pagina {
