@@ -17,11 +17,79 @@
     padding: 0;
 }
 
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#previous-button, #next-button {
+    background-color: purple;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+    padding: 20px;
+}
+
+.color-type-grass {
+    background-color: green;
+}
+
+.color-type-fire {
+    background-color: red;
+}
+
+.color-type-water {
+    background-color: blue;
+}
+
+.color-type-normal {
+    background-color: gray;
+}
+
+.color-type-bug {
+    background-color: violet;
+}
+
+.color-type-electric {
+    background-color: yellow;
+}
+
+.color-type-poison {
+    background-color: purple;
+}
+
+.color-type-ground {
+    background-color: brown;
+}
+
+.color-type-fairy {
+    background-color: #12a97c;
+}
+
+.color-type-fighting {
+    background-color: rgb(109, 43, 53);
+}
+
+.color-type-psychic {
+    background-color: rgb(108, 107, 53);
+}
+
+.color-type-rock {
+    background-color: rgb(98, 37, 9);
+}
+
+.color-type-ghost {
+    background-color: rgb(115, 35, 158);
+}
+
 .lista-pokemon_itens {
     margin: 5%;
     padding: 5%;
     border-radius: 20px;
-    background-color: rgb(37, 228, 221);
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -30,7 +98,7 @@
         "d d "
         "d d "
         "c e "
-        "a a "
+        "a a ";
 }
 
 .numero-pokemon {
@@ -38,7 +106,7 @@
     display: flex;
     justify-content: flex-end;
     margin: 1px;
-    color: rgb(70, 71, 73);
+    color: rgb(0, 0, 0);
     font-size: 4vh;
 }
 
@@ -49,7 +117,7 @@
     font-size: 4vh;
     font-weight: 700;
     justify-content: center;
-
+    text-transform: capitalize;
 }
 
 .move-set1-pokemon,
@@ -89,7 +157,6 @@
     box-sizing: border-box;
     margin: auto;
 }
-
 
 @media screen and (min-width: 768px) {
     .pagina {
